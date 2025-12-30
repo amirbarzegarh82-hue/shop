@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فروشگاه اینترنتی امیرحسین برزگر - محصولات دیجیتال و الکترونیکی">
+    <meta name="keywords" content="موبایل, لپ‌تاپ, هدفون, ساعت هوشمند, لوازم جانبی">
+    <title>Amirhossein Barzgar - فروشگاه محصولات دیجیتال</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>Amirhossein Barzgar</h1>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">خانه</a></li>
+                    <li class="dropdown">
+                        <a href="#products" class="nav-link">محصولات</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#mobile">موبایل</a></li>
+                            <li><a href="#laptop">لپ‌تاپ</a></li>
+                            <li><a href="#headphone">هدفون</a></li>
+                            <li><a href="#accessories">لوازم جانبی</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#deals" class="nav-link">پیشنهادات ویژه</a></li>
+                    <li><a href="#contact" class="nav-link">تماس با ما</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Search -->
+                <button class="search-btn" aria-label="جستجو">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+
+                <!-- Cart -->
+                <button class="cart-btn" id="cartBtn" aria-label="سبد خرید">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+                <!-- User Account -->
+                <button class="user-btn" aria-label="حساب کاربری">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="منوی موبایل">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Off-Canvas Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <h3>منو</h3>
+            <button class="close-menu" id="closeMenu">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#home">خانه</a></li>
+                <li>
+                    <button class="mobile-dropdown-toggle">محصولات</button>
+                    <ul class="mobile-dropdown">
+                        <li><a href="#mobile">موبایل</a></li>
+                        <li><a href="#laptop">لپ‌تاپ</a></li>
+                        <li><a href="#headphone">هدفون</a></li>
+                        <li><a href="#accessories">لوازم جانبی</a></li>
+                    </ul>
+                </li>
+                <li><a href="#deals">پیشنهادات ویژه</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Slider -->
+        <section class="hero-slider" id="home">
+            <div class="slider-container">
+                <div class="slide active" data-slide="0">
+                    <img src="images/IMG_4899.PNG" alt="پیشنهادات ویژه محصولات دیجیتال" loading="lazy">
+                    <div class="slide-content">
+                        <h2>محصولات دیجیتال برتر</h2>
+                        <p>جدیدترین و با کیفیت‌ترین محصولات دیجیتال را از ما بخرید</p>
+                        <a href="#products" class="btn btn-primary">همین حالا خرید کنید</a>
+                    </div>
+                </div>
+                <div class="slide" data-slide="1">
+                    <img src="images/hero-banner-2.png" alt="تجهیزات گیمینگ حرفه‌ای" loading="lazy">
+                    <div class="slide-content">
+                        <h2>تجهیزات گیمینگ</h2>
+                        <p>با بهترین تجهیزات گیمینگ، تجربه بازی خود را ارتقا دهید</p>
+                        <a href="#deals" class="btn btn-secondary">مشاهده پیشنهادات</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation -->
+            <button class="slider-nav prev" id="prevSlide" aria-label="اسلاید قبلی">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+            </button>
+            <button class="slider-nav next" id="nextSlide" aria-label="اسلاید بعدی">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+            </button>
+
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="categories" id="products">
+            <div class="container">
+                <h2 class="section-title">دسته‌بندی محصولات</h2>
+                <div class="categories-grid">
+                    <a href="#mobile" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/iphone-1.jpg" alt="موبایل" loading="lazy">
+                        </div>
+                        <h3>موبایل</h3>
+                    </a>
+                    <a href="#laptop" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/laptop-2.jpg" alt="لپ‌تاپ" loading="lazy">
+                        </div>
+                        <h3>لپ‌تاپ</h3>
+                    </a>
+                    <a href="#headphone" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/airpods-1.jpg" alt="هدفون" loading="lazy">
+                        </div>
+                        <h3>هدفون</h3>
+                    </a>
+                    <a href="#accessories" class="category-card">
+                        <div class="category-icon">
+                            <img src="images/powerbank-1.jpg" alt="لوازم جانبی" loading="lazy">
+                        </div>
+                        <h3>لوازم جانبی</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="mobile-cat-header">
+            <div class="mobile-categories-scroll">
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">📱</div>
+                    <span>موبایل</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">💻</div>
+                    <span>لپ‌تاپ</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">🎧</div>
+                    <span>هدفون</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">⌚</div>
+                    <span>ساعت هوشمند</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">🎮</div>
+                    <span>گیمینگ</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">📷</div>
+                    <span>دوربین</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">🔊</div>
+                    <span>اسپیکر</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">🖱️</div>
+                    <span>لوازم جانبی</span>
+                </a>
+                <a href="#" class="cat-chip">
+                    <div class="cat-circle">📺</div>
+                    <span>صوتی تصویری</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">محصولات ویژه</h2>
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card" data-product-id="1">
+                        <div class="product-image">
+                            <img src="images/IMG_4892.PNG" alt="iPhone 15 Pro" loading="lazy">
+                            <div class="product-badge">ویژه</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">iPhone 15 Pro</h3>
+                            <p class="product-description">گوشی هوشمند اپل با دوربین حرفه‌ای</p>
+                            <div class="product-price">
+                                <span class="current-price">۲۵,۰۰۰,۰۰۰ تومان</span>
+                                <span class="old-price">۲۸,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="1">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card" data-product-id="2">
+                        <div class="product-image">
+                            <img src="images/IMG_4899.PNG" alt="لپ‌تاپ گیمینگ" loading="lazy">
+                            <div class="product-badge">جدید</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">لپ‌تاپ گیمینگ ASUS</h3>
+                            <p class="product-description">لپ‌تاپ حرفه‌ای برای گیمینگ و کار</p>
+                            <div class="product-price">
+                                <span class="current-price">۴۵,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="2">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card" data-product-id="3">
+                        <div class="product-image">
+                            <img src="images/airpods-1.jpg" alt="AirPods Pro" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">AirPods Pro</h3>
+                            <p class="product-description">هدفون بی‌سیم با کیفیت صدای عالی</p>
+                            <div class="product-price">
+                                <span class="current-price">۸,۵۰۰,۰۰۰ تومان</span>
+                                <span class="old-price">۱۰,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="3">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card" data-product-id="4">
+                        <div class="product-image">
+                            <img src="images/IMG_4894.PNG" alt="ساعت هوشمند" loading="lazy">
+                            <div class="product-badge">پرفروش</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Apple Watch Series 9</h3>
+                            <p class="product-description">ساعت هوشمند با قابلیت‌های پیشرفته</p>
+                            <div class="product-price">
+                                <span class="current-price">۱۵,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="4">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card" data-product-id="5">
+                        <div class="product-image">
+                            <img src="images/IMG_4895.PNG" alt="پاور بانک" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">پاور بانک ۲۰۰۰۰ میلی‌آمپر</h3>
+                            <p class="product-description">شارژ همراه با ظرفیت بالا</p>
+                            <div class="product-price">
+                                <span class="current-price">۵۵۰,۰۰۰ تومان</span>
+                                <span class="old-price">۷۵۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="5">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card" data-product-id="6">
+                        <div class="product-image">
+                            <img src="images/IMG_4896.PNG" alt="هدست گیمینگ" loading="lazy">
+                            <div class="product-badge">جدید</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">هدست گیمینگ RGB</h3>
+                            <p class="product-description">هدست حرفه‌ای با نورپردازی RGB</p>
+                            <div class="product-price">
+                                <span class="current-price">۲,۸۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="6">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 -->
+                    <div class="product-card" data-product-id="7">
+                        <div class="product-image">
+                            <img src="images/IMG_4897.PNG" alt="ماوس گیمینگ" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ماوس گیمینگ حرفه‌ای</h3>
+                            <p class="product-description">ماوس با دقت بالا برای گیمینگ</p>
+                            <div class="product-price">
+                                <span class="current-price">۱,۲۰۰,۰۰۰ تومان</span>
+                                <span class="old-price">۱,۵۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="7">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 -->
+                    <div class="product-card" data-product-id="8">
+                        <div class="product-image">
+                            <img src="images/IMG_4898.PNG" alt="مانیتور" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">مانیتور ۲۷ اینچ ۴K</h3>
+                            <p class="product-description">مانیتور حرفه‌ای با کیفیت تصویر عالی</p>
+                            <div class="product-price">
+                                <span class="current-price">۱۲,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <button class="btn btn-add-cart" data-product-id="8">
+                                افزودن به سبد خرید
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mobile-trust-bar">
+            <div class="trust-item">
+                <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+                <span>ارسال سریع</span>
+            </div>
+            <div class="trust-item">
+                <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>ضمانت کالا</span>
+            </div>
+            <div class="trust-item">
+                <svg class="trust-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+                <span>پرداخت امن</span>
+            </div>
+        </div>
+        <!-- Product Slider -->
+        <section class="product-slider-section">
+            <div class="container">
+                <h2 class="section-title">محبوب‌ترین محصولات</h2>
+                <div class="product-slider">
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="sliderTrack">
+                            <!-- Slider products will be added by JavaScript -->
+                        </div>
+                    </div>
+                    <button class="slider-arrow prev" id="prevProduct">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="15,18 9,12 15,6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="slider-arrow next" id="nextProduct">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="9,18 15,12 9,6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Banners -->
+        <section class="promo-section" id="deals">
+            <div class="container">
+                <div class="promo-grid">
+                    <div class="promo-banner">
+                        <img src="images/IMG_4871.PNG" alt="تخفیف ویژه" loading="lazy">
+                        <div class="promo-content">
+                            <h3>تخفیف‌های ویژه</h3>
+                            <p>تا ۵۰٪ تخفیف در محصولات منتخب</p>
+                            <a href="#products" class="btn-outline-more">مشاهده همه</a>
+                        </div>
+                    </div>
+                    <div class="promo-banner">
+                        <img src="images/IMG_488772.PNG" alt="پیشنهادات ویژه" loading="lazy">
+                        <div class="promo-content">
+                            <h3>پیشنهادات ویژه</h3>
+                            <p>بهترین قیمت‌های روز بازار</p>
+                            <a href="#deals" class="btn-outline-offer">اطلاعات بیشتر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>سبد خرید</h3>
+            <button class="close-cart" id="closeCart">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>جمع کل:</span>
+                <span id="cartTotal">۰ تومان</span>
+            </div>
+            <button class="btn btn-primary btn-checkout" id="checkoutBtn">
+                تسویه حساب
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3>درباره ما</h3>
+                    <p>فروشگاه امیرحسین برزگر ارائه‌دهنده بهترین محصولات دیجیتال با کیفیت و قیمت مناسب.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="فیسبوک">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="اینستاگرام">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="توییتر">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section-1">
+                    <h3>لینک‌های سریع</h3>
+                    <ul>
+                        <li><a href="#products">محصولات</a></li>
+                        <li><a href="#deals">پیشنهادات ویژه</a></li>
+                        <li><a href="#">حساب کاربری</a></li>
+                        <li><a href="#">پیگیری سفارش</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <svg class="icon-location" viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            مازندران، شهسوار
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            011-123456
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            amirbarzgarh@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3>خبرنامه</h3>
+                    <p>برای دریافت آخرین پیشنهادات، عضو خبرنامه شوید</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="ایمیل شما" required>
+                        <button type="submit" class="btn btn-primary">عضویت</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Amirhossein Barzgar تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
